@@ -51,9 +51,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgB-Md-9S8">
-                                <rect key="frame" x="81" y="48" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VgB-Md-9S8">
+                                <rect key="frame" x="158" y="67" width="87" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="1lR-5a-Rc6"/>
+                                    <constraint firstAttribute="width" constant="87" id="ZHX-DX-Crn"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,11 +67,15 @@
                             <constraint firstItem="Del-XR-ocn" firstAttribute="top" secondItem="rJr-br-Kc5" secondAttribute="bottom" constant="61" id="Hnn-40-xuw"/>
                             <constraint firstItem="Del-XR-ocn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="PqD-mg-swp"/>
                             <constraint firstItem="Del-XR-ocn" firstAttribute="leading" secondItem="UxF-9u-Nlz" secondAttribute="leading" id="RdH-QE-ajD"/>
+                            <constraint firstItem="VgB-Md-9S8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="Z1U-wg-8Cs"/>
                             <constraint firstItem="UxF-9u-Nlz" firstAttribute="top" secondItem="Del-XR-ocn" secondAttribute="bottom" constant="24" id="cfb-tE-Xxp"/>
                             <constraint firstItem="njd-UN-gev" firstAttribute="top" secondItem="UxF-9u-Nlz" secondAttribute="bottom" constant="22" id="d8c-gy-BQz"/>
                             <constraint firstItem="rJr-br-Kc5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g7W-vK-y53"/>
                             <constraint firstItem="UxF-9u-Nlz" firstAttribute="leading" secondItem="njd-UN-gev" secondAttribute="leading" id="gSM-9c-vlh"/>
                             <constraint firstItem="rJr-br-Kc5" firstAttribute="centerX" secondItem="Del-XR-ocn" secondAttribute="centerX" id="h3T-S4-uif"/>
+                            <constraint firstItem="VgB-Md-9S8" firstAttribute="centerX" secondItem="rJr-br-Kc5" secondAttribute="centerX" id="lAd-yr-odL"/>
+                            <constraint firstItem="rJr-br-Kc5" firstAttribute="top" secondItem="VgB-Md-9S8" secondAttribute="bottom" constant="33" id="xJk-8r-ccG"/>
+                            <constraint firstItem="VgB-Md-9S8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="158" id="xcy-fS-8Em"/>
                         </constraints>
                     </view>
                     <connections>
@@ -79,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-623" y="147"/>
+            <point key="canvasLocation" x="-623.1884057971015" y="146.73913043478262"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fC5-P5-e83">
@@ -278,4 +285,7 @@
             <point key="canvasLocation" x="159" y="159"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.jpg" width="537" height="733"/>
+    </resources>
 </document>

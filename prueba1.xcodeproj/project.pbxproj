@@ -16,6 +16,7 @@
 		E9A431951DE8B6E6002B3DA7 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A431941DE8B6E6002B3DA7 /* Alumno.swift */; };
 		E9CF305D1DE4DDC000ABDADE /* tabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF305C1DE4DDC000ABDADE /* tabController.swift */; };
 		E9CF305F1DE4E02200ABDADE /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF305E1DE4E02200ABDADE /* DatosViewController.swift */; };
+		E9DDDE361E0B15C000AFC695 /* recursos in Resources */ = {isa = PBXBuildFile; fileRef = E9DDDE351E0B15C000AFC695 /* recursos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E9A431941DE8B6E6002B3DA7 /* Alumno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		E9CF305C1DE4DDC000ABDADE /* tabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabController.swift; sourceTree = "<group>"; };
 		E9CF305E1DE4E02200ABDADE /* DatosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosViewController.swift; sourceTree = "<group>"; };
+		E9DDDE351E0B15C000AFC695 /* recursos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = recursos; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		E93D36851DDF8C9E001BE01E /* prueba1 */ = {
 			isa = PBXGroup;
 			children = (
+				E9DDDE351E0B15C000AFC695 /* recursos */,
 				E93D36861DDF8C9E001BE01E /* AppDelegate.swift */,
 				E93D36881DDF8C9E001BE01E /* ViewController.swift */,
 				E9A431941DE8B6E6002B3DA7 /* Alumno.swift */,
@@ -161,6 +164,7 @@
 			files = (
 				E93D36911DDF8C9E001BE01E /* LaunchScreen.storyboard in Resources */,
 				E93D368E1DDF8C9E001BE01E /* Assets.xcassets in Resources */,
+				E9DDDE361E0B15C000AFC695 /* recursos in Resources */,
 				E93D368C1DDF8C9E001BE01E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
