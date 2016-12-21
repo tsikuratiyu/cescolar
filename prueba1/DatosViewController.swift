@@ -25,10 +25,13 @@ class DatosViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    
+        
         form = Section("Datos")
             <<< LabelRow(){ row in
                 row.title = "Código"
-                row.value = "Ingresa texto aqui"
+                row.value = ""
         }
             <<< LabelRow(){ row in
                 row.title = "Nombre"
@@ -60,7 +63,7 @@ class DatosViewController: FormViewController {
         
         do {
             let payload2 = try JWT.decode(payload, algorithm: .hs256("secret".data(using: .utf8)!))
-            print(payload2)
+            //print(payload2)
         } catch {
             print("Failed to decode JWT: \(error)")
         }
@@ -68,7 +71,7 @@ class DatosViewController: FormViewController {
 
         
         let urlPath: String = "http://cescolar.cucea.udg.mx/servicios/service.php?token=\(payload)" //this will be changed to the path where service.php lives
-        print(urlPath)
+        //print(urlPath)
         let url = URL(string: urlPath)
         
         let theRequest = NSMutableURLRequest(url: url! as URL)
@@ -76,9 +79,54 @@ class DatosViewController: FormViewController {
         let configuration = URLSessionConfiguration.default
         
         let session = URLSession.shared
-        let task = session.dataTask(with: theRequest as URLRequest, completionHandler: {data, response, error -> Void in
-            print(data)
-        })
+        /*let task = session.dataTask(with: theRequest as URLRequest, completionHandler: {data, response, error -> Void in
+            guard let responseData = data else {
+                print("Error: did not receive data")
+                return
+            }
+            // parse the result as JSON, since that's what the API provides
+            do {
+                guard let todo = try JSONSerialization.jsonObject(with: responseData, options: [])
+                    as? [String: Any] else {
+                        print("error trying to convert data to JSON")
+                        return
+                }
+                // now we have the todo
+                // let's just print it to prove we can access it
+                print("The todo is: " + todo.description)
+            //let alumno = AlumnoModel(jsonStr: response)
+            //print(alumno.name!) // Output is "myUser"
+        })*/
+            
+            let task = session.dataTask(with: theRequest as URLRequest) {
+                (data, response, error) in
+                // check for any errors
+                guard error == nil else {
+                    print("error calling GET on /todos/1")
+                    print(error!)
+                    return
+                }
+                // make sure we got data
+                guard let responseData = data else {
+                    print("Error: did not receive data")
+                    return
+                }
+                // parse the result as JSON, since that's what the API provides
+                do {
+                    let responseData = String(data: data!, encoding: String.Encoding.utf8)
+                    //print(responseData)
+                    
+                    let jsonData = responseData?.data(using: String.Encoding.utf8, allowLossyConversion: true)
+                    
+                    
+                    let json = try JSONSerialization.jsonObject(with: jsonData!, options: JSONSerialization.ReadingOptions.mutableContainers) as! Array<AnyObject>
+                    print(json[0]["nombre"])
+                    
+                } catch  {
+                    print("error trying to convert data to JSON")
+                    return
+                }
+            }
         
         task.resume()
     
