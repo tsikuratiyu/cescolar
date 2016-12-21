@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SWXMLHash
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
