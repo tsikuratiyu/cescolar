@@ -13,6 +13,8 @@
 		E93D368C1DDF8C9E001BE01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93D368A1DDF8C9E001BE01E /* Main.storyboard */; };
 		E93D368E1DDF8C9E001BE01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93D368D1DDF8C9E001BE01E /* Assets.xcassets */; };
 		E93D36911DDF8C9E001BE01E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93D368F1DDF8C9E001BE01E /* LaunchScreen.storyboard */; };
+		E961E1EE1E0DBCC90065139A /* logoUDG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E961E1ED1E0DBCC90065139A /* logoUDG.jpg */; };
+		E961E1F11E0E106F0065139A /* Alumno.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E961E1EF1E0E106F0065139A /* Alumno.xcdatamodeld */; };
 		E9A431951DE8B6E6002B3DA7 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A431941DE8B6E6002B3DA7 /* Alumno.swift */; };
 		E9CF305D1DE4DDC000ABDADE /* tabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF305C1DE4DDC000ABDADE /* tabController.swift */; };
 		E9CF305F1DE4E02200ABDADE /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF305E1DE4E02200ABDADE /* DatosViewController.swift */; };
@@ -30,6 +32,8 @@
 		E93D368D1DDF8C9E001BE01E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E93D36901DDF8C9E001BE01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E93D36921DDF8C9E001BE01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E961E1ED1E0DBCC90065139A /* logoUDG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logoUDG.jpg; path = ../../Downloads/logoUDG.jpg; sourceTree = "<group>"; };
+		E961E1F01E0E106F0065139A /* Alumno.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alumno.xcdatamodel; sourceTree = "<group>"; };
 		E9A431941DE8B6E6002B3DA7 /* Alumno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
 		E9CF305C1DE4DDC000ABDADE /* tabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabController.swift; sourceTree = "<group>"; };
 		E9CF305E1DE4E02200ABDADE /* DatosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		E93D367A1DDF8C9E001BE01E = {
 			isa = PBXGroup;
 			children = (
+				E961E1EF1E0E106F0065139A /* Alumno.xcdatamodeld */,
+				E961E1ED1E0DBCC90065139A /* logoUDG.jpg */,
 				E93D36851DDF8C9E001BE01E /* prueba1 */,
 				E93D36841DDF8C9E001BE01E /* Products */,
 				4CA91F23CD08E2CC71DEAE58 /* Pods */,
@@ -166,6 +172,7 @@
 				E93D368E1DDF8C9E001BE01E /* Assets.xcassets in Resources */,
 				E9DDDE361E0B15C000AFC695 /* recursos in Resources */,
 				E93D368C1DDF8C9E001BE01E /* Main.storyboard in Resources */,
+				E961E1EE1E0DBCC90065139A /* logoUDG.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9CF305D1DE4DDC000ABDADE /* tabController.swift in Sources */,
+				E961E1F11E0E106F0065139A /* Alumno.xcdatamodeld in Sources */,
 				E9A431951DE8B6E6002B3DA7 /* Alumno.swift in Sources */,
 				E93D36891DDF8C9E001BE01E /* ViewController.swift in Sources */,
 				E9CF305F1DE4E02200ABDADE /* DatosViewController.swift in Sources */,
@@ -395,6 +403,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E961E1EF1E0E106F0065139A /* Alumno.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E961E1F01E0E106F0065139A /* Alumno.xcdatamodel */,
+			);
+			currentVersion = E961E1F01E0E106F0065139A /* Alumno.xcdatamodel */;
+			path = Alumno.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E93D367B1DDF8C9E001BE01E /* Project object */;
 }
