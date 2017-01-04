@@ -26,7 +26,7 @@ class DatosViewController: FormViewController {
         super.viewDidLoad()
         
         
-        let payload = try JWT.encode(["token": "CONTROL-ESCOLAR-CUCEA","codigo": "216355666"], algorithm: .hs256("secret".data(using: .utf8)!))
+        let payload = JWT.encode(["token": "CONTROL-ESCOLAR-CUCEA","codigo": "216355666"], algorithm: .hs256("secret".data(using: .utf8)!))
         
         
         let urlPath: String = "http://cescolar.cucea.udg.mx/servicios/service.php?token=\(payload)" //this will be changed to the path where service.php lives
@@ -81,7 +81,7 @@ class DatosViewController: FormViewController {
                     
                 } catch  {
                     print("error trying to convert data to JSON")
-                    return
+                    return  
                 }
             }
         

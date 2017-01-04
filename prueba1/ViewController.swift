@@ -96,8 +96,9 @@ class ViewController: UIViewController {
         print("datos erroneos")
         }
         else{
-        let datos = resp?.components(separatedBy: ",")
+        //let datos = resp?.components(separatedBy: ",")
         
+        /*
         var tipo: String = datos![0]
         var codigo: String = datos![1]
         var nombre: String = datos![2]
@@ -105,7 +106,7 @@ class ViewController: UIViewController {
         var centro: String = datos![4]
         
         print(nombre)
-        
+        */
         
         OperationQueue.main.addOperation {
         self.performSegue(withIdentifier: "logeo", sender: self)}
